@@ -43,9 +43,13 @@ gem 'compass-rails'
 
 # Use foundation
 gem 'foundation-rails'
+gem 'foundation-icons-sass-rails', ">= 3.0.0"
 
 # Use HAML
 gem 'haml-rails'
 
 # Use rails_admin
 gem 'rails_admin'
+
+# Use slick_rails
+gem 'jquery-slick-rails'

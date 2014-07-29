@@ -13,6 +13,14 @@
  *= require_self
  */
 @import "_settings";
+@import "slick";
 @import "foundation";
+@import "foundation-icons";
 @import
-    "components/container";
+    "components/container",
+    "components/fonts",
+    "components/category",
+    "components/top-bar",
+    "components/product",
+    "components/lookbook",
+    "components/slick-override";

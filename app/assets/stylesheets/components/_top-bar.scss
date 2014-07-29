@@ -1,0 +1,29 @@
+@media #{$medium} {
+
+}
+
+@media #{$large} {
+    .top-bar-section {
+        > ul {
+            min-height: 48px;
+            > li {
+                &:hover, &.active {
+                    border-bottom: 3px solid #ffa366;
+                }
+                ul.dropdown {
+                    background-color: #fff;
+                    border: 1px solid #ffa366;
+                    border-radius: 2px;
+                    padding: 8px;
+                    top: 48px;
+                    > li {
+                        border-bottom: 1px solid #f5f5f5;
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.slick-prev, .slick-next {
+    &:hover, &:focus {
+        background: none;
+    }
+}

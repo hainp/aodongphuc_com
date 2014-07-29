@@ -1,0 +1,20 @@
+@media #{$small} {
+
+}
+
+@media #{$medium} {
+
+}
+
+@media #{$large} {
+    .lookbook {
+        @include grid-row();
+        padding-left: 10px;
+        padding-right: 10px;
+        .slide {
+            margin-top: 22px;
+            margin-botom: 32px;
+            height: 195px;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@media #{$small} {
+
+}
+
+@media #{$medium} {
+
+}
+
+@media #{$large} {
+    .products {
+        @include grid-row();
+        margin-top: 15px;
+        margin-bottom: 50px;
+        .product {
+            @include grid-column($columns: 3);
+            background-color: #ccc;
+            display: inline-block;
+            height: 150px;
+            margin-top: 20px;
+            margin-right: 20px;
+            padding: 0;
+            position: relative;
+            width: 220px;
+            > .overlay {
+                background-color: rgba(0, 0, 0, 0);
+                color: #fff;
+                height: 100%;
+                left: 0;
+                padding-top: 50px;
+                position: absolute;
+                text-align: center;
+                text-transform: uppercase;
+                top: 0;
+                transition: all .3s ease-in-out 0s;
+                width: 100%;
+                > .name, .icon {
+                    display: none;
+                }
+                > .name {
+                    font-weight: bold;
+                    font-size: .9em;
+                }
+                > .icon {
+                    background-color: #242424;
+                    border-radius: 50%;
+                    color: #fff;
+                    font-size: 1.2em;
+                    height: 40px;
+                    margin: 15px auto;
+                    padding: 8px;
+                    width: 40px;
+                    &:hover {
+                        background-color: #ffa366;
+                    }
+                }
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.3);
+                    >.name, .icon {
+                        display: block;
+                    }
+                }
+            }
+            &:nth-child(4n) {
+                margin-right: 0;
+            }            
+        }
+    }
+}

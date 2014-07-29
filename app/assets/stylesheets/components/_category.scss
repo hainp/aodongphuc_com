@@ -1,0 +1,39 @@
+@media #{$small} {
+}
+
+@media #{$medium} {
+
+}
+
+@media #{$large} {
+    .categories {
+        @include grid-row();
+        padding-left: 10px;
+        padding-right: 10px;
+        .category {
+            @include grid-column($columns: 3);
+            margin: 25px auto;
+            .image {
+                background-color: #ccc;
+                border-radius: 50%;
+                font-weight: bold;
+                height: 140px;
+                max-width: 140px;
+                margin: 0 auto;
+                text-transform: uppercase;
+                text-align: center;
+                transition: all 0.2s ease-in-out 0s;
+                &:hover {
+                    background-color: #ffa366;
+                }
+                a {
+                    color: #fff;
+                }
+                .name {
+                    font-size: .9em;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

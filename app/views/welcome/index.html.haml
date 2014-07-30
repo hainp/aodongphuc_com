@@ -35,48 +35,10 @@
       %div.product
 %section.categories
   %h3.title Các loại áo
-  %div.row
-    %div.category
-      %div.image
-        %a{href: "#"}
-          = image_tag "aothun.png"
-          %div.name Áo thun
-    %div.category
-      %div.image
-        %a{href: "#"}
-          = image_tag "aocobe.png"
-          %div.name Áo cổ bẻ
-    %div.category
-      %div.image
-        %a{href: "#"}
-          = image_tag "aokhoac.png"
-          %div.name Áo khoác
-    %div.category
-      %div.image
-        %a{href: "#"}
-          = image_tag "aosomi.png"
-          %div.name Áo sơ mi
-  %div.row
-    %div.category
-      %div.image
-        %a{href: "#"}
-          = image_tag "vest.png"
-          %div.name
-    %div.category
-      %div.image
-        %a{href: "#"}
-          = image_tag "mu.png"
-          %div.name
-    %div.category
-      %div.image
-        %a{href: "#"}
-          = image_tag "huyhieu.png"
-          %div.name
-    %div.category
-      %div.image
-        %a{href: "#"}
-          = image_tag "vay.png"
-          %div.name
+  - @categories.each_slice(4).to_a.each do |row|
+    %div.row
+      - row.each do |category|
+        = render "category_partial", :category => category
 %section.lookbook
   %h3.title Lookbook
   %div.slides

@@ -53,3 +53,6 @@ gem 'rails_admin'
 
 # Use slick_rails
 gem 'jquery-slick-rails'
+
+# Use paperclip
+gem "paperclip", "~> 4.1"

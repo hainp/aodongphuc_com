@@ -1,9 +1,8 @@
 %section.full.banners
   %div.slides
-    %div
-      = image_tag "banner-1.png"
-    %div
-      = image_tag "banner-1.png"
+    - @banners.each do |banner|
+      %div
+        %img{src: "#{banner.featured_image}"}
   %div.buttons
     %div.banner-button
       %a

@@ -5,5 +5,6 @@ class WelcomeController < ApplicationController
     # Use array.in_group_of(number_of_columns)
     @categories = Category.all
     @products = Product.all
+    @banners = Banners.all
   end
 end

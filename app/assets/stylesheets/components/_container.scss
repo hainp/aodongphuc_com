@@ -55,7 +55,7 @@ footer {
 
 @media #{$large} {
     header {
-        padding-top: rem-calc(20);
+        padding: 20px 10px 0;
         margin-bottom: rem-calc(20);
         .logo {
             height: 100px;
@@ -123,6 +123,12 @@ footer {
             padding-right: 10px;
             .banner-button {
                 @include grid-column($columns: 4);
+                max-width: 300px;
+                padding: 0;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
             }
         }
     }

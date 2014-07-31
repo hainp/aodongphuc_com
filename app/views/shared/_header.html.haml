@@ -1,0 +1,22 @@
+%header
+  %div.logo.large-2.columns
+    %img{"width" => "100%", "height" => "95", "alt" => "SunTeam logo"}
+  %div.large-8.columns.right
+    %div.row
+      %div.email.large-4.columns
+        %i.fi-mail
+        sales@aodongphuc.com
+      %div.phone.large-5.columns
+        %i.fi-telephone
+        0902.040.040 - 0904.700.087
+      %div.search.large-3.columns
+        %div.row.collapse
+          %div.large-9.columns
+            %input{"type" => "text"}
+          %div.large-3.columns
+            %a.button.postfix
+              %i.fi-magnifying-glass
+    %nav.top-bar{"data-topbar" => ""}
+      %section.top-bar-section
+        %ul.right
+          = render "shared/menu", collection: @menus

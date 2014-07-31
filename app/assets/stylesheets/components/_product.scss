@@ -11,6 +11,8 @@
         @include grid-row();
         margin-top: 15px;
         margin-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
         .product {
             @include grid-column($columns: 3);
             background-color: #ccc;

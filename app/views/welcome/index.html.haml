@@ -16,23 +16,11 @@
         = image_tag "chonsizeao.png"
 %div.full.transit.transit-1
 %section.products
-  %div.container
-    %h3.title Sản phẩm nổi bật
+  %h3.title Sản phẩm nổi bật
+  - @products.each_slice(4).to_a.each do |row|
     %div.row
-      %div.product
-        = image_tag "product-1.png"
-        %div.overlay
-          %div.name 12A13 - THPT Kim Liên
-          %a.icon
-            %i.fi-magnifying-glass
-      %div.product
-      %div.product
-      %div.product
-    %div.row
-      %div.product
-      %div.product
-      %div.product
-      %div.product
+      - row.each do |product|
+        = render "product_partial", :product => product
 %section.categories
   %h3.title Các loại áo
   - @categories.each_slice(4).to_a.each do |row|

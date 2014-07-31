@@ -4,15 +4,10 @@
       %div
         %img{src: "#{banner.featured_image}"}
   %div.buttons
-    %div.banner-button
-      %a
-        = image_tag "cachthucgiaodich.png"
-    %div.banner-button
-      %a
-        = image_tag "dathangonline.png"
-    %div.banner-button
-      %a
-        = image_tag "chonsizeao.png"
+    - @buttons.each do |button|
+      %div.banner-button
+        %a{href: "#{button.link}"}
+          %img{src: "#{button.featured_image}"}
 %div.full.transit.transit-1
 %section.products
   %h3.title Sản phẩm nổi bật

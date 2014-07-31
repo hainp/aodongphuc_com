@@ -6,5 +6,6 @@ class WelcomeController < ApplicationController
     @categories = Category.all
     @products = Product.all
     @banners = Banners.all
+    @buttons = Button.all
   end
 end

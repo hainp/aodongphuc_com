@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  resources :categories
-
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :products
 
   get 'welcome/index'
+  
+  get 'categories/:id', to: 'categories#show', as: 'category'
+  
+  get 'products/:id', to: 'products#show', as: 'product'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

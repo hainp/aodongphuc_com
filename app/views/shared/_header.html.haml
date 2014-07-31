@@ -19,4 +19,14 @@
     %nav.top-bar{"data-topbar" => ""}
       %section.top-bar-section
         %ul.right
-          = render "shared/menu", collection: @menus
+          - @menus.each do |menu|
+            - if menu.parent == nil then
+              - has_child = !menu.subordinates.empty?
+              %li{:class => (has_child ? "has-dropdown not-click" : "")}
+                %a{href: "#{menu.link}"} #{menu.name}
+                - if has_child then
+                  %ul.dropdown
+                    - menu.subordinates.each do |sub_menu|
+                      %li
+                        %a{href: "#{sub_menu.link}"} #{sub_menu.name}
+

@@ -1,8 +1,1 @@
-- @menus.each do |menu|
-  - has_child = !menu.subordinates.empty?
-  %li{:class => (has_child ? "has-dropdown not-click" : "")}
-    %a{href: "#{menu.link}"}
-      #{menu.name}
-    - if has_child then
-      %ul.dropdown
-        = render "shared/menu", collection: menu.subordinates
+

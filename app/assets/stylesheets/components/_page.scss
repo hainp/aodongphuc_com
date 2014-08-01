@@ -1,0 +1,25 @@
+.page {
+    .title {
+        background-color: #f9f9f9;
+        border: 0;
+    }
+    .content {
+       img {
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+       }
+    }
+}
+
+@media #{$large} {
+    .page {
+        .title {
+            height: 100px;
+        }
+        .content {
+            margin-top: 50px;
+            margin-bottom: 70px;
+        }
+    }
+}

@@ -1,4 +1,8 @@
-%h1
-  = @page.name
-%div
-  = raw @page.content
+%section.full.page
+  %div.title
+    %div.row
+      %h3
+        = @page.name
+  %div.full.transit.transit-1
+  %div.content
+    = raw @page.content

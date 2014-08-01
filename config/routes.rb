@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :menus
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 

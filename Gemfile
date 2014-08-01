@@ -56,3 +56,6 @@ gem 'jquery-slick-rails'
 
 # Use paperclip
 gem "paperclip", "~> 4.1"
+
+# Use rails_config
+gem "rails_config"

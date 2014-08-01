@@ -3,20 +3,9 @@
   %div.container
     %div.large-6.columns
       %div.social-icons
-        %a.social-icon
-          %i.fi-social-facebook
-        %a.social-icon
-          %i.fi-social-twitter
-        %a.social-icon
-          %i.fi-social-google-plus
-        %a.social-icon
-          %i.fi-social-skype
-        %a.social-icon
-          %i.fi-social-instagram
-        %a.social-icon
-          %i.fi-social-flickr
-        %a.social-icon
-          %i.fi-social-pinterest
+        - @channels.each do |channel|
+          %a.social-icon{href: "#{channel.link}"}
+            %i{class: "fi-social-#{channel.name}"}
       %div.copyright
         Bản quyền thuộc về Volcano.vn
     %div.large-5.columns.right

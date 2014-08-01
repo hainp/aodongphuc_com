@@ -16,38 +16,6 @@ header {
 footer {
     color: #fff;
     background-color: #a1a1a1;
-    .social-icons {
-        .social-icon {
-            background-color: #616161;
-            border-radius: 50%;
-            color: #fff;
-            transition: all 0.2s ease-in-out 0s;
-            &:nth-child(n):hover {
-                color: #fff;
-            }
-            &:nth-child(1):hover {
-                background-color: #617bba;
-            }
-            &:nth-child(2):hover {
-                background-color: #95ccee;
-            }
-            &:nth-child(3):hover {
-                background-color: #d95333;
-            }
-            &:nth-child(4):hover {
-                background-color: #5794cf;
-            }
-            &:nth-child(5):hover {
-                background-color: #775d53;
-            }
-            &:nth-child(6):hover {
-                background-color: #c4438d;
-            }
-            &:last-child:hover {
-                background-color: #cd5757;
-            }
-        }
-    }
     .copyright {
         margin-top: 5px;
     }

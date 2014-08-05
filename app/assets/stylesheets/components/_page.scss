@@ -1,7 +1,12 @@
 .page {
-    .title {
+    .full {
         background-color: #f9f9f9;
+    }
+    .title {    
         border: 0;
+        color: #ff8c07;
+        font-weight: bold;
+        text-transform: uppercase;
     }
     .content {
        img {
@@ -15,7 +20,9 @@
 @media #{$large} {
     .page {
         .title {
-            height: 100px;
+            @include grid-column($columns: 2, $offset: 1);
+            line-height: 100px;
+            vertical-align: middle;
         }
         .content {
             margin-top: 50px;

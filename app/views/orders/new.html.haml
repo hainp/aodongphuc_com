@@ -1,0 +1,48 @@
+%section.order
+  %div.full
+    %div.row
+      %h4.title Đặt hàng
+  %div.full.transit.transit-1
+  %div.row.content
+    %div.columns.large-6
+      %form
+        %div.row
+          %div.columns.large-8
+            %input{type: "text", placeholder: "Họ tên"}
+        %div.row
+          %div.columns.large-8
+            %input{type: "text", placeholder: "Địa chỉ"}
+        %div.row
+          %div.columns.large-8
+            %input{type: "text", placeholder: "Email"}
+        %div.row
+          %div.columns.large-12
+            %input{type: "text", placeholder: "Tiêu đề"}
+        %div.row
+          %div.columns.large-12
+            %textarea{placeholder: "Nội dung", required: ""}
+        %div.row
+          %div.columns.large-4.right
+            %input.button.large-12{type: "submit", value: "Gửi"}
+    %div.columns.large-5.right
+      %div.row
+        %div.columns.large-12
+          %span.icon-pin
+          %b Địa chỉ
+          %br
+          = Settings.address
+      %div.row
+        %div.columns.large-12
+          %span.icon-iphone
+          %b Hotline
+          %br
+          = Settings.phone
+      %div.row
+        %div.columns.large-12
+          %span.icon-envelope
+          %b Email
+          %br
+          = Settings.email
+      %div.row.map
+        %div.columns.large-12
+          <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=z2tOkRD-Wy3w.k53qkeEuOv44" width="100%" height="300" style="border:0"></iframe>

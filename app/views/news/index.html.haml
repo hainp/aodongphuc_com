@@ -1,0 +1,21 @@
+%section.news
+  %div.full
+    %div.row
+      %h4.title Tin tức
+  %div.full.transit.transit-1
+  %div.content
+    - @all_news.each do | news |
+      %div.row
+        %div.columns.large-4
+          %a{href: "/news/#{news.id}"}
+            %img{src: "#{news.featured_image}"}
+        %div.columns.large-8
+          %a{href: "/news/#{news.id}"}
+            %h5= news.title
+          %p.date
+            = l news.created_at, :format => :news
+          %p.description= news.description
+    %div.row
+      %div.columns.large-12
+        %a.button.radius.large-12
+          Xem thêm

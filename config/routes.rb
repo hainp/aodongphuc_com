@@ -12,8 +12,8 @@ Rails.application.routes.draw do
 
   get 'pages/:id', to: 'pages#show', as: 'page'
 
+  get 'orders/', to: 'orders#new'
   get 'orders/new', to: 'orders#new', as: 'order'
-
   post 'orders/create'
 
   get 'news/', to: 'news#index'

@@ -21,6 +21,13 @@ footer {
     }
 }
 
+.notice {
+    margin-top: 50px;
+    h5 {
+        color: #fff;
+    }
+}
+
 @media #{$large} {
     header {
         padding: 20px 10px 0;

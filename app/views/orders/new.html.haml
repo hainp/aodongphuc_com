@@ -3,27 +3,32 @@
     %div.row
       %h4.title Đặt hàng
   %div.full.transit.transit-1
+  - if flash[:notice]
+    %div.row.notice
+      %div.alert-box.success.radius
+        %h5= flash[:notice]
+        %a.close &times;
   %div.row.content
     %div.columns.large-6
-      %form
+      = form_for :order, :url => {:controller => 'orders', :action => 'create'} do | f |
         %div.row
           %div.columns.large-8
-            %input{type: "text", placeholder: "Họ tên"}
+            = f.text_field :name, placeholder: "Họ tên"
         %div.row
           %div.columns.large-8
-            %input{type: "text", placeholder: "Địa chỉ"}
+            = f.text_field :phone, placeholder: "Điện thoại"
         %div.row
           %div.columns.large-8
-            %input{type: "text", placeholder: "Email"}
+            = f.text_field :email, placeholder: "Email (không bắt buộc)"
         %div.row
           %div.columns.large-12
-            %input{type: "text", placeholder: "Tiêu đề"}
+            = f.text_field :title, placeholder: "Tiêu đề"
         %div.row
           %div.columns.large-12
-            %textarea{placeholder: "Nội dung", required: ""}
+            = f.text_area :content, placeholder: "Nội dung"
         %div.row
           %div.columns.large-4.right
-            %input.button.large-12{type: "submit", value: "Gửi"}
+            = f.submit value: "Gửi", class: "button large-12"
     %div.columns.large-5.right
       %div.row
         %div.columns.large-12

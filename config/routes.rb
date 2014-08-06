@@ -3,16 +3,20 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   get 'welcome/index'
-  
+
   get 'categories/:id', to: 'categories#show', as: 'category'
-  
+
   get 'products/:id', to: 'products#show', as: 'product'
-  
+
   get 'pages/:id', to: 'pages#show', as: 'page'
-  
+
   get 'orders/new', to: 'orders#new', as: 'order'
-  
+
   post 'orders/create'
+
+  get 'news/index', to: 'news#index', as: 'news'
+
+  get 'news/:id', to: 'news#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

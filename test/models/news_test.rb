@@ -15,4 +15,11 @@ class NewsTest < ActiveSupport::TestCase
     @news_list += News.order(created_at: :desc).limit(2).offset(2)
     assert_equal 4, @news_list.size
   end
+  
+  test "find a news by id" do
+    @news = News.find_by_id(1)
+    @nil_news = News.find_by_id(100)
+    assert_equal 1, @news.id
+    assert_nil @nil_news
+  end
 end

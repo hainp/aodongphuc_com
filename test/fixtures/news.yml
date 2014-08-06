@@ -1,26 +1,31 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   title: MyString
   description: MyText
   content: MyText
 
 two:
+  id: 2
   title: MyString
   description: MyText
   content: MyText
 
 three:
+  id: 3
   title: MyString
   description: MyText
   content: MyText
 
 four:
+  id: 4
   title: MyString
   description: MyText
   content: MyText
 
 five:
+  id: 5
   title: MyString
   description: MyText
   content: MyText

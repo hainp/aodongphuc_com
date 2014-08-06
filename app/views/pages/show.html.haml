@@ -1,7 +1,5 @@
-%section.page
-  %div.full
-    %div.row
-      %h4.title= @page.name
-  %div.full.transit.transit-1
-  %div.row.content
+= render "top", :page => @page
+%section.container
+  %div.article
+    %div.columns.large-12.content
     = raw @page.content

@@ -1,11 +1,8 @@
-%section.news
-  %div.full
-    %div.row
-      %h4.title Tin tức
-  %div.full.transit.transit-1
-  %div.content
+= render "top"
+%section.container
+  %div.articles
     - @all_news.each do | news |
-      %div.row
+      %div.article
         %div.columns.large-4
           %a{href: "/news/#{news.id}"}
             %img{src: "#{news.featured_image}"}
@@ -15,7 +12,7 @@
           %p.date
             = l news.created_at, :format => :news
           %p.description= news.description
-    %div.row
-      %div.columns.large-12
-        %a.button.radius.large-12.read-more
-          Xem thêm
+      %div.row
+        %div.columns.large-12
+          %a.button.radius.large-12.read-more
+            Xem thêm

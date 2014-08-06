@@ -2,7 +2,7 @@
 // All this logic will automatically be available in application.js.
 
 $('.read-more').click(function() {
-    var offset = $('.news > .content > .row').length - 1;
+    var offset = $('.articles > .article').length;
     var params = { 'offset': offset };
     var self = this;
     $.ajax({
@@ -15,7 +15,7 @@ $('.read-more').click(function() {
 
         time = prettyDate(d.created_at);
 
-        row = "<div class='row'><div class='columns large-4'><a href='/news/";
+        row = "<div class='article'><div class='columns large-4'><a href='/news/";
         row += d.id +"'><img src='" + d.featured_image + "'></a></div>";
         row += "<div class='columns large-8'><a href='/news/" + d.id + "'>";
         row += "<h5>" + d.title + "</h5></a><p class='date'>" + time + "</p>";

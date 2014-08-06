@@ -10,4 +10,10 @@ class NewsController < ApplicationController
       format.json { render :index }
     end
   end
+  
+  # GET /news/:id
+  def show
+    @news = News.find_by(id: params[:id])
+    @latest = News.where.not(id: @news).order(created_at: :desc).limit(3)
+  end
 end

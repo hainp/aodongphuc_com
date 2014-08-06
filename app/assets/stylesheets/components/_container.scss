@@ -3,10 +3,8 @@
 }
 
 .container {
-    @include grid-row();
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 header {
@@ -25,6 +23,18 @@ footer {
     margin-top: 50px;
     h5 {
         color: #fff;
+    }
+}
+
+.top {
+    .full {
+        background-color: #f9f9f9;
+    }
+    .page-title {
+        border: 0;
+        color: $primary-color;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 }
 
@@ -74,7 +84,7 @@ footer {
             }
         }
     }
-    .title {
+    section.title {
         border-left: 3px solid #ffa366;
         padding-left: 10px;
         margin-bottom: 0;
@@ -88,7 +98,7 @@ footer {
             height: 355px;
             padding-left: 10px;
             padding-right: 10px;
-        }        
+        }
         .buttons {
             @include grid-row();
             margin-top: 20px;
@@ -103,6 +113,13 @@ footer {
                     margin-right: 0;
                 }
             }
+        }
+    }
+    .top {
+        .page-title {
+            @include grid-column($columns: 2);
+            line-height: 100px;
+            vertical-align: middle;
         }
     }
     .transit {

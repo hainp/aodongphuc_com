@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
 
+  get 'categories/', to: 'categories#index'
+  get 'categories/index', to: 'categories#index'
   get 'categories/:id', to: 'categories#show', as: 'category'
 
   get 'products/:id', to: 'products#show', as: 'product'
@@ -14,8 +16,8 @@ Rails.application.routes.draw do
 
   post 'orders/create'
 
-  get 'news/index', to: 'news#index', as: 'news'
-
+  get 'news/', to: 'news#index'
+  get 'news/index', to: 'news#index'
   get 'news/:id', to: 'news#show'
 
   # The priority is based upon order of creation: first created -> highest priority.

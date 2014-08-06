@@ -1,0 +1,15 @@
+= render "top"
+%section.container
+  %div.article
+    %h2.title= @news.title
+    %div.columns.large-12.content= raw @news.content
+  %div.latest.articles
+    %div.row.title
+      %div.columns.large-12
+        %h4 Tin mới nhất
+    - @latest.each do | news |
+      %div.row.article
+        %div.columns.large-12
+          %a{href: "/news/#{news.id}"}
+            = news.title
+    

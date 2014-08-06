@@ -16,6 +16,17 @@
     }
 }
 
+.latest {
+    .article {
+        a {
+            color: #373737;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
 @media #{$large} {
     .articles {
         > .article {
@@ -34,8 +45,11 @@
         }
         &.latest {
             border-top: 2px solid $primary-color;
-            .title {
+            > .title {
                 margin-top: 20px;
+            }
+            .article {
+                height: auto;
             }
         }
     }

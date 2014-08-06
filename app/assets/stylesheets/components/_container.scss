@@ -84,10 +84,12 @@ footer {
             }
         }
     }
-    section.title {
-        border-left: 3px solid #ffa366;
-        padding-left: 10px;
-        margin-bottom: 0;
+    section {
+        > .title {
+            border-left: 3px solid #ffa366;
+            padding-left: 10px;
+            margin-bottom: 0;
+        }
     }
     .banners {
         background-color: #fbfbfb;

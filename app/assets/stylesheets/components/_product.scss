@@ -13,6 +13,12 @@
         margin-bottom: 50px;
         padding-left: 10px;
         padding-right: 10px;
+        .slider-for {
+            .slide {
+                height: 450px;
+                width: 100%;
+            }
+        }
         .product {
             @include grid-column($columns: 3);
             background-color: #ccc;
@@ -64,7 +70,7 @@
             }
             &:nth-child(4n) {
                 margin-right: 0;
-            }            
+            }
         }
     }
 }

@@ -1,1 +1,22 @@
-%p#notice= notice
+= render "top", :category => @category
+%section.container.products
+  %div.slide-for
+    - @category.products.each do | product |
+      %div.slide
+        %img{src: "#{product.featured_image}"}
+    - @category.products.each do | product |
+      %div.slide
+        %img{src: "#{product.featured_image}"}
+    - @category.products.each do | product |
+      %div.slide
+        %img{src: "#{product.featured_image}"}
+  %div.slide-nav
+    - @category.products.each do | product |
+      %div.slide
+        %img{src: "#{product.featured_image}"}
+    - @category.products.each do | product |
+      %div.slide
+        %img{src: "#{product.featured_image}"}
+    - @category.products.each do | product |
+      %div.slide
+        %img{src: "#{product.featured_image}"}

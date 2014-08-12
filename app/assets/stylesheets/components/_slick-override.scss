@@ -11,3 +11,11 @@
         background: none;
     }
 }
+
+.products {
+    .slick-prev, .slick-next {
+        &:before, &:after {
+            color: #888;
+        }
+    }
+}

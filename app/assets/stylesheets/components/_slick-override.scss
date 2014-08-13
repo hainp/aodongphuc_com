@@ -2,7 +2,7 @@
     left: 0;
 }
 
-.slick-next {
+.lookbook .slick-next {
     right: 15px;
 }
 
@@ -12,10 +12,33 @@
     }
 }
 
+.slick-dots {
+    button {
+        margin-bottom: 0;
+    }
+}
+
 .products {
     .slick-prev, .slick-next {
         &:before, &:after {
             color: #888;
         }
+    }
+    .slider-for {
+        .slide {
+            height: 450px;
+            width: 100%;
+        }
+    }
+    .slider-nav {
+        .slide {
+            img {
+                max-width: 140px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .slide {
+        text-align: center;
     }
 }

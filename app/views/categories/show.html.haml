@@ -1,22 +1,10 @@
 = render "top", :category => @category
 %section.container.products
-  %div.slide-for
+  %div.slider.slider-for
     - @category.products.each do | product |
       %div.slide
         %img{src: "#{product.featured_image}"}
-    - @category.products.each do | product |
-      %div.slide
-        %img{src: "#{product.featured_image}"}
-    - @category.products.each do | product |
-      %div.slide
-        %img{src: "#{product.featured_image}"}
-  %div.slide-nav
-    - @category.products.each do | product |
-      %div.slide
-        %img{src: "#{product.featured_image}"}
-    - @category.products.each do | product |
-      %div.slide
-        %img{src: "#{product.featured_image}"}
+  %div.slider.slider-nav
     - @category.products.each do | product |
       %div.slide
         %img{src: "#{product.featured_image}"}

@@ -1,17 +1,21 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 $(document).ready(function() {
-    $('.products .slide-for').slick({
+    var sliderFor = $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: 'slide-nav',
-        arrows: false
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav',
+        centerMode: true
     });
 
-    $('.products .slide-nav').slick({
+    var sliderNav = $('.slider-nav').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        asNavFor: '.slide-for',
-        focusOnSelect: true
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+        asNavFor: '.slider-for'
     });
 });

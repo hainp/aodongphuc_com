@@ -59,12 +59,20 @@ footer {
                 margin: 0;
                 width: 100%;
                 border: 0;
-                border-radius: 20px;
+                border-radius: 20px 0 0 20px;
+                box-shadow: none;
+                &:focus {
+                    border: 0;
+                    box-shadow: none;
+                    background-color: #fff;
+                }
             }
-            a.button {
+            button {
                 background: none;
                 color: #666;
                 margin: 0;
+                border: 0;
+                padding-left: 16px;
             }
         }
         nav.top-bar {

@@ -121,7 +121,7 @@ footer {
     }
     .top {
         .page-title {
-            @include grid-column($columns: 3);
+            @include grid-column($columns: 3, $center: true);
             line-height: 50px;
             vertical-align: middle;
         }

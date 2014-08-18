@@ -1,3 +1,7 @@
+html, body {
+    min-width: rem-calc(960);
+}
+
 .full {
     max-width: 100% !important;
 }

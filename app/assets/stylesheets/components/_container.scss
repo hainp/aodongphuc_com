@@ -7,7 +7,7 @@ html, body {
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 70px;
 }
 
@@ -122,7 +122,7 @@ footer {
     .top {
         .page-title {
             @include grid-column($columns: 3);
-            line-height: 100px;
+            line-height: 50px;
             vertical-align: middle;
         }
     }

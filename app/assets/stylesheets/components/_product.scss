@@ -1,16 +1,7 @@
-@media #{$small} {
-
-}
-
-@media #{$medium} {
-
-}
-
 @media #{$large} {
     .products {
         @include grid-row();
-        margin-top: 15px;
-        margin-bottom: 50px;
+        margin: 30px auto 70px;
         padding-left: 10px;
         padding-right: 10px;
         .product {

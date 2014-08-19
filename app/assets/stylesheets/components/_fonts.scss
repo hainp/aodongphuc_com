@@ -7,25 +7,31 @@
                   );
 
 [class^="icon-"], [class*=" icon-"] {
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-left:before {
+	content: "\e600";
+}
+.icon-arrow-right:before {
+	content: "\e601";
+}
 .icon-envelope:before {
-    content: "\e60b";
+	content: "\e60b";
 }
 .icon-iphone:before {
-    content: "\e60c";
+	content: "\e60c";
 }
 .icon-pin:before {
-    content: "\e60d";
+	content: "\e60d";
 }

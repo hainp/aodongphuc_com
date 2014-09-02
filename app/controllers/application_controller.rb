@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
   def set_items_for_menu
-    @menus = Menu.all
+    @menus = Menu.order(:order)
   end
 
   def set_social_channels

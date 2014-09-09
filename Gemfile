@@ -59,3 +59,6 @@ gem "paperclip", "~> 4.1"
 
 # Use rails_config
 gem "rails_config"
+
+# Use devise
+gem "devise"

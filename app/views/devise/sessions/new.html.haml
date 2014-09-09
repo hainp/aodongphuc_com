@@ -1,0 +1,27 @@
+%section.container
+  %div.row
+    %div.columns.large-6.large-centered
+      %div.panel
+        %h2 Đăng nhập
+        = form_for resource, as: resource_name, url: session_path(resource_name) do |f|
+          %div.row.collapse
+            %div.small-2.columns
+              %span.prefix
+                %i.fi-mail
+            %div.small-10.columns
+              = f.text_field :email, placeholder: "Email"
+          .row.collapse
+            .small-2.columns
+              %span.prefix
+                %i.fi-lock
+            .small-10.columns
+              = f.password_field :password, placeholder: "Mật khẩu", autocomplete: "off"
+          - if devise_mapping.rememberable?
+            .row
+              .small-2.columns
+                = f.check_box :remember_me
+              .small-10.columns
+                Ghi nhớ
+          .row
+            .large-4.columns.large-centered
+              = f.submit value: "Đăng nhập", class: "button small large-12"
